@@ -1,70 +1,120 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Benvenuto nel mio GitHub Page</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Your Name - GitHub Profile</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
             margin: 0;
             padding: 0;
-            text-align: center;
+            background-color: #f4f4f4;
+            color: #333;
         }
         header {
             background-color: #24292f;
             color: white;
-            padding: 20px 0;
+            padding: 20px;
+            text-align: center;
         }
-        h1 {
-            font-size: 2.5em;
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #2d333b;
+        }
+        nav a {
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #57606f;
         }
         section {
-            margin: 40px auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+        .project-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
             padding: 20px;
-            max-width: 900px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .project-card h3 {
+            margin-top: 0;
         }
         footer {
             background-color: #24292f;
             color: white;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            padding: 10px;
             text-align: center;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Benvenuto nel mio GitHub!</h1>
-        <p>Questa è la mia pagina personale su GitHub Pages.</p>
-    </header>
 
-    <section>
-        <h2>Chi sono</h2>
-        <p>Mi chiamo Stefano e sono appassionato di programmazione, simulazione numerica e sistemi circuitali.</p>
-        <p>Qui puoi trovare (a breve) i miei progetti e contributi open source.</p>
-    </section>
+<header>
+    <h1>Your Name</h1>
+    <p>Software Developer | Open Source Enthusiast</p>
+</header>
 
-    <section>
-        <h2>I miei progetti</h2>
-        <ul>
-%            <li><a href="https://github.com/[tuo-username]/progetto1" target="_blank">Progetto 1</a></li>
-%            <li><a href="https://github.com/[tuo-username]/progetto2" target="_blank">Progetto 2</a></li>
-%            <li><a href="https://github.com/[tuo-username]/progetto3" target="_blank">Progetto 3</a></li>
-        </ul>
-    </section>
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-    <footer>
-        <p>&copy; 2024 Stefano. Tutti i diritti riservati.</p>
-    </footer>
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm a passionate software developer who loves to explore new technologies and contribute to open-source projects. I specialize in web development, but I enjoy working with various programming languages and frameworks.</p>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <p>A description of your first project. What does it do? Why is it interesting?</p>
+            <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <p>A description of your second project. Share any details about it here.</p>
+            <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card">
+            <h3>Project 3</h3>
+            <p>A description of your third project. Highlight the features or tech used here.</p>
+            <a href="https://github.com/yourusername/project3" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>If you'd like to connect, feel free to reach out!</p>
+    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <p>Twitter: <a href="https://twitter.com/yourusername" target="_blank">@yourusername</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
 
