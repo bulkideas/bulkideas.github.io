@@ -3,86 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stefano's Profile</title>
+    <title>Stefano's Professional Profile</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f3f2ef;
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
             margin: 0;
             padding: 0;
         }
         .container {
-            width: 80%;
+            width: 90%;
+            max-width: 800px;
             margin: 50px auto;
             background-color: #fff;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .profile-header {
-            display: flex;
-            align-items: center;
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
         }
         .profile-pic {
-            width: 120px;
-            height: 120px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
-            background-color: #ccc;
-            margin-right: 20px;
+            background-color: #ddd;
+            display: inline-block;
+            background-image: url('https://via.placeholder.com/150');
+            background-size: cover;
+            background-position: center;
         }
-        .profile-info h1 {
-            margin: 0;
+        h1 {
+            font-size: 2em;
+            margin: 10px 0 5px;
         }
-        .section {
-            margin-top: 30px;
-        }
-        .section h2 {
-            color: #0a66c2;
-            border-bottom: 2px solid #0a66c2;
+        h2 {
+            font-size: 1.5em;
+            color: #555;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #eee;
             padding-bottom: 5px;
         }
+        p {
+            line-height: 1.6;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills li {
+            background-color: #eef;
+            color: #005;
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
         .contact a {
-            color: #0a66c2;
+            color: #0066cc;
             text-decoration: none;
         }
         .contact a:hover {
             text-decoration: underline;
         }
+        .graph-image {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border: 1px solid #ddd;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="profile-header">
-            <div class="profile-pic"></div> <!-- Placeholder for profile picture -->
-            <div class="profile-info">
-                <h1>Stefano</h1>
-                <p>Student | Interested in Circuits & Numerical Simulations</p>
-            </div>
+        <div class="header">
+            <div class="profile-pic"></div>
+            <h1>Stefano</h1>
+            <p>Student | Enthusiast in Circuits & Numerical Simulations</p>
         </div>
-
         <div class="section about">
             <h2>About Me</h2>
-            <p>Hi, I'm Stefano! I'm passionate about exploring circuits and developing numerical simulations. I'm eager to learn and collaborate on innovative projects.</p>
+            <p>Hello! I'm Stefano, a dedicated student with a passion for exploring the realms of circuit design and numerical simulations. I thrive on solving complex problems and am always eager to learn and collaborate on innovative projects.</p>
         </div>
-
         <div class="section skills">
             <h2>Skills</h2>
             <ul>
                 <li>Circuit Design & Analysis</li>
                 <li>Numerical Simulations</li>
-                <li>Python & MATLAB (or any other tools you use)</li>
+                <li>Python</li>
+                <li>MATLAB</li>
+                <li>Problem-Solving</li>
             </ul>
         </div>
-
         <div class="section projects">
             <h2>Projects</h2>
-            <p>Check out my work on <a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank">GitHub</a>.</p>
+            <p>Explore my work on <a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank">GitHub</a>, where I showcase various projects related to circuits and simulations.</p>
         </div>
-
         <div class="section contact">
             <h2>Contact</h2>
             <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
             <p>LinkedIn: <a href="https://linkedin.com/in/YOUR-LINKEDIN" target="_blank">linkedin.com/in/YOUR-LINKEDIN</a></p>
+        </div>
+        <div class="section graph">
+            <h2>Featured Graph</h2>
+            <img src="https://via.placeholder.com/600x400?text=2D+Graph" alt="2D Graph Image" class="graph-image">
         </div>
     </div>
 </body>
