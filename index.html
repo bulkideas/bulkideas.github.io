@@ -14,7 +14,7 @@
         }
         .container {
             width: 90%;
-            max-width: 800px;
+            max-width: 1000px;
             margin: 50px auto;
             background-color: #fff;
             padding: 20px;
@@ -73,11 +73,15 @@
             text-decoration: underline;
         }
         .projects-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            display: flex;
+            justify-content: space-between;
             gap: 20px;
+            flex-wrap: wrap;
         }
         .project-box {
+            flex: 1;
+            min-width: 30%; 
+            max-width: 30%; 
             background-color: #f0f8ff;
             padding: 15px;
             border-radius: 8px;
@@ -85,6 +89,10 @@
             background-size: cover;
             background-position: center;
             color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 250px;
         }
         .project-box h3 {
             margin-top: 0;
@@ -99,6 +107,7 @@
             color: #ffdd57;
             text-decoration: none;
             font-weight: bold;
+            align-self: flex-start;
         }
         .project-box a:hover {
             text-decoration: underline;
@@ -112,6 +121,13 @@
         }
         .project3 {
             background-image: url('https://www.rrauction.com/auctions/lot-detail/345886806383029-albert-einstein-handwritten-letter-with-mathematical-equations/');
+        }
+
+        @media (max-width: 768px) {
+            .project-box {
+                min-width: 100%;
+                max-width: 100%;
+            }
         }
     </style>
 </head>
@@ -148,20 +164,21 @@
                 </div>
                 <div class="project-box project2">
                     <h3>Project 2</h3>
-                    <p>Details about the second project, such as its purpose and key takeaways. This box is ready for future projects too!</p>
+                    <p>Details about the second project, such as its purpose and key takeaways.</p>
                     <a href="https://github.com/YOUR-GITHUB-USERNAME/project2" target="_blank">View on GitHub</a>
                 </div>
                 <div class="project-box project3">
                     <h3>Project 3</h3>
-                    <p>A placeholder for your upcoming project. Add your ideas here to showcase your evolving skills and interests.</p>
+                    <p>A placeholder for your upcoming project. Add your ideas here.</p>
                     <a href="https://github.com/YOUR-GITHUB-USERNAME/project3" target="_blank">View on GitHub</a>
                 </div>
             </div>
         </div>
         <div class="section contact">
             <h2>Contact</h2>
-            <p>Feel free to connect with me via <a href="mailto:your.email@example.com">email</a> or on <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn</a>.</p>
+            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/YOUR-LINKEDIN" target="_blank">linkedin.com/in/YOUR-LINKEDIN</a></p>
         </div>
-
-::contentReference[oaicite:0]{index=0}
- 
+    </div>
+</body>
+</html>
