@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f9f9f9;
+            background-color: #e6f2ff; /* Light blue background */
             color: #333;
             margin: 0;
             padding: 0;
@@ -19,7 +19,7 @@
             background-color: #fff;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
         .header {
             text-align: center;
@@ -41,9 +41,9 @@
         }
         h2 {
             font-size: 1.5em;
-            color: #555;
+            color: #1a3e72;
             margin-bottom: 15px;
-            border-bottom: 2px solid #eee;
+            border-bottom: 2px solid #e6f2ff;
             padding-bottom: 5px;
         }
         p {
@@ -57,25 +57,61 @@
             padding: 0;
         }
         .skills li {
-            background-color: #eef;
-            color: #005;
+            background-color: #cce6ff;
+            color: #1a3e72;
             display: inline-block;
             padding: 5px 10px;
             margin: 5px;
             border-radius: 5px;
+            font-weight: bold;
         }
         .contact a {
-            color: #0066cc;
+            color: #0056b3;
             text-decoration: none;
         }
         .contact a:hover {
             text-decoration: underline;
         }
-        .graph-image {
-            width: 100%;
-            height: auto;
-            margin-top: 20px;
-            border: 1px solid #ddd;
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+        .project-box {
+            background-color: #f0f8ff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+        .project-box h3 {
+            margin-top: 0;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        .project-box p {
+            font-size: 0.9em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        .project-box a {
+            color: #ffdd57;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .project-box a:hover {
+            text-decoration: underline;
+        }
+        /* Specific backgrounds for each project */
+        .project1 {
+            background-image: url('https://resources.altium.com/p/schematic-tutorial-altium-designer-journey-thousand-pcbs');
+        }
+        .project2 {
+            background-image: url('https://dreamquestbengals.com/article/5-matlab-3d-plot-examples-explained-with-code-and-colors');
+        }
+        .project3 {
+            background-image: url('https://www.rrauction.com/auctions/lot-detail/345886806383029-albert-einstein-handwritten-letter-with-mathematical-equations/');
         }
     </style>
 </head>
@@ -102,17 +138,30 @@
         </div>
         <div class="section projects">
             <h2>Projects</h2>
-            <p>Explore my work on <a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank">GitHub</a>, where I showcase various projects related to circuits and simulations.</p>
+            <p>Explore my work on <a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank">GitHub</a>.</p>
+
+            <div class="projects-container">
+                <div class="project-box project1">
+                    <h3>Project 1</h3>
+                    <p>A brief description of the project goes here. This could include the project's goal, technologies used, or challenges overcome.</p>
+                    <a href="https://github.com/YOUR-GITHUB-USERNAME/project1" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-box project2">
+                    <h3>Project 2</h3>
+                    <p>Details about the second project, such as its purpose and key takeaways. This box is ready for future projects too!</p>
+                    <a href="https://github.com/YOUR-GITHUB-USERNAME/project2" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-box project3">
+                    <h3>Project 3</h3>
+                    <p>A placeholder for your upcoming project. Add your ideas here to showcase your evolving skills and interests.</p>
+                    <a href="https://github.com/YOUR-GITHUB-USERNAME/project3" target="_blank">View on GitHub</a>
+                </div>
+            </div>
         </div>
         <div class="section contact">
             <h2>Contact</h2>
-            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/YOUR-LINKEDIN" target="_blank">linkedin.com/in/YOUR-LINKEDIN</a></p>
+            <p>Feel free to connect with me via <a href="mailto:your.email@example.com">email</a> or on <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn</a>.</p>
         </div>
-        <div class="section graph">
-            <h2>Featured Graph</h2>
-            <img src="https://via.placeholder.com/600x400?text=2D+Graph" alt="2D Graph Image" class="graph-image">
-        </div>
-    </div>
-</body>
-</html>
+
+::contentReference[oaicite:0]{index=0}
+ 
